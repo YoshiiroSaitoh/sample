@@ -16,7 +16,7 @@ public class RSample {
 
     public static void main(String[] args) {
         Rengine engine = new Rengine(new String[]{"--no-save"}, false, null);
-        engine.assign("a", new int[]{36});
+        engine.assign("a", new int[]{1024});
         REXP result = engine.eval("sqrt(a)");
         System.out.println(result.asDouble());
         engine.end();
